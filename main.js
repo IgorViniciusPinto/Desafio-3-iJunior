@@ -123,15 +123,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-
-  document.querySelectorAll(".checkbox__box").forEach((label) => {
-    label.addEventListener("click", () => {
-      label.classList.toggle("active");
-    });
-  });
-
-
-
   const copyToClipboard = () => {
     if (elements.passwordField.value !== "" && elements.passwordField.value !== "Select character length") {
       elements.passwordField.select();
