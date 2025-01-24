@@ -334,3 +334,8 @@ input[type="text"]:disabled::placeholder {
     padding: 20px 32px;
   }
 }
+
+
+.checkbox__box.active {
+  background-color: #A4FFAF;
+}
