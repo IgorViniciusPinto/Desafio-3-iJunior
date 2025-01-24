@@ -123,6 +123,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+
+
+
   const copyToClipboard = () => {
     if (elements.passwordField.value !== "" && elements.passwordField.value !== "Select character length") {
       elements.passwordField.select();
