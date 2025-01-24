@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .filter((checkbox) => checkbox.checked)
       .map((checkbox) => checkbox.name),
   });
+  
 
   const createBars = () => {
     const barElements = [];
@@ -115,6 +116,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
   
+  
+  document.querySelectorAll(".checkbox__box").forEach((box) => {
+    box.addEventListener("click", () => {
+      box.classList.toggle("active");
+    });
+  });
+
+
+  document.querySelectorAll(".checkbox__box").forEach((label) => {
+    label.addEventListener("click", () => {
+      label.classList.toggle("active");
+    });
+  });
+
+
 
   const copyToClipboard = () => {
     if (elements.passwordField.value !== "" && elements.passwordField.value !== "Select character length") {
